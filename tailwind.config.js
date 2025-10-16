@@ -6,6 +6,7 @@ export default {
       backgroundColor: {
         "bgPrimary": "#2A6F97",
       },
+      
     },
   },
   plugins: [],
