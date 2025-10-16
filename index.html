@@ -6,6 +6,66 @@
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<!-- XPBoost Navbar Start -->
+
+<header class="fixed top-0 left-0 w-full z-50 bg-bgPrimary backdrop-blur-md shadow-sm transition-all duration-300">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="./src/assets/logo-xpboost.png" alt="XPBoost Logo" class="max-w-[70px]">
+    </div>
+
+    <!-- Menu -->
+    <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+      <li><a href="#roadmaps" class="hover:text-blue-600 transition">Roadmaps</a></li>
+      <li><a href="#why" class="hover:text-blue-600 transition">Why XPBoost</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+
+    <!-- Button -->
+    <a href="#contact" class="hidden md:inline-block bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+      Get Started
+    </a>
+
+    <!-- Mobile menu toggle -->
+    <button id="menu-toggle" class="md:hidden p-2 rounded-lg  transition">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 text-white hover:text-blue-200"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-blue-300 shadow-lg md:hidden">
+    <ul class="flex flex-col items-center space-y-4 py-6 font-medium text-gray-700">
+      <li><a href="#roadmaps" class="hover:text-blue-600 text-white  transition">Home</a></li>
+      <li><a href="#why" class="hover:text-blue-600 text-white  transition">Roadmaps</a></li>
+      <li><a href="#contact" class="hover:text-blue-600  text-white transition">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- JS interaktif untuk menu mobile -->
+<script>
+  const menuBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('animate-fadeIn');
+  });
+</script>
+
+<!-- Animasi -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease forwards;
+  }
+</style>
+<!-- ===================== -->
+<!-- XPBoost Navbar End -->
+<!-- ===================== -->
+
   </body>
 </html>
