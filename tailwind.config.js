@@ -6,7 +6,9 @@ export default {
       backgroundColor: {
         "bgPrimary": "#2A6F97",
       },
-      
+      fontFamily:{
+        "urbanist": "@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');",
+      },
     },
   },
   plugins: [],
