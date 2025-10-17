@@ -4,70 +4,291 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-<!-- XPBoost Navbar Start -->
+  <body class="overflow-x-hidden scroll-smooth">
+    <!-- XPBoost Navbar Start -->
 
-<header class="fixed top-0 left-0 w-full z-50 bg-bgPrimary backdrop-blur-md shadow-sm transition-all duration-300">
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="./src/assets/logo-xpboost.png" alt="XPBoost Logo" class="max-w-[70px]">
-    </div>
+    <header
+      class="fixed top-0 left-0 w-full z-50 bg-bgPrimary backdrop-blur-md shadow-sm transition-all duration-300"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img
+            src="./src/assets/logo-xpboost.png"
+            alt="XPBoost Logo"
+            class="max-w-[70px]"
+          />
+        </div>
 
-    <!-- Menu -->
-    <ul class="hidden md:flex space-x-8 font-medium text-white">
-      <li><a href="#home" class="hover:text-blue-600 transition">Home</a></li>
-      <li><a href="#roadmaps" class="hover:text-blue-600 transition">Roadmaps</a></li>
-      <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
-    </ul>
+        <!-- Menu -->
+        <ul class="hidden md:flex space-x-8 font-medium text-white">
+          <li>
+            <a href="#home" class="hover:text-blue-600 transition">Home</a>
+          </li>
+          <li>
+            <a href="#roadmaps" class="hover:text-blue-600 transition"
+              >Roadmaps</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
 
+        <!-- Mobile menu toggle -->
+        <button id="menu-toggle" class="md:hidden p-2 rounded-lg transition">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 text-white hover:text-blue-200"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
+        </button>
+      </nav>
 
-    <!-- Mobile menu toggle -->
-    <button id="menu-toggle" class="md:hidden p-2 rounded-lg  transition">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2 text-white hover:text-blue-200"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
-    </button>
-  </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden bg-blue-300 shadow-lg md:hidden">
+        <ul
+          class="flex flex-col items-center space-y-4 py-6 font-medium text-gray-700"
+        >
+          <li>
+            <a
+              href="#roadmaps"
+              class="hover:text-blue-600 text-white transition"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#why" class="hover:text-blue-600 text-white transition"
+              >Roadmaps</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-600 text-white transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden bg-blue-300 shadow-lg md:hidden">
-    <ul class="flex flex-col items-center space-y-4 py-6 font-medium text-gray-700">
-      <li><a href="#roadmaps" class="hover:text-blue-600 text-white  transition">Home</a></li>
-      <li><a href="#why" class="hover:text-blue-600 text-white  transition">Roadmaps</a></li>
-      <li><a href="#contact" class="hover:text-blue-600  text-white transition">Contact</a></li>
-    </ul>
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero-section"
+        class="w-screen max-h-screen flex justify-center items-start text-center md:overflow-hidden mt-8"
+      >
+        <img src="./src/assets/Frame 90.png" class="w-full lg:hidden" />
+        <img
+          src="./src/assets/Hero (2).png"
+          alt=""
+          class="hidden lg:block w-full shadow-lg"
+        />
+        <div
+          class="absolute lg:flex lg:items-center lg:justify-center lg:flex-col top-[150px] md:top-[350px]"
+        >
+          <h1 class="text-[#2A6F97] font-semibold text-4xl mb-3 lg:text-[72px]">
+            XPBoost Roadmap
+          </h1>
+          <p
+            class="text-[#50BFEC] font-medium italic text-[17px] lg:text-[32px] mt-5"
+          >
+            “Your journey to smarter skills starts <br />
+            here”
+          </p>
+          <button
+            class="bg-bgPrimary text-white px-14 py-4 rounded-xl font-semibold mt-9"
+          >
+            <a href="#roadmaps">Start Learning</a>
+          </button>
+        </div>
+      </section>
+      <!-- reviews -->
+      <section
+        class="min-h-screen px-6 py-20 flex flex-col gap-y-11"
+        id="reviews"
+      >
+        <!-- judul review -->
+        <div class="">
+          <h1 class="text-center text-[28px] font-semibold -mx-7">
+            We offers three essential roadmaps:
+          </h1>
+          <p class="text-center">to make your journey easier</p>
+        </div>
+        <!-- card review -->
+        <div class="relative w-full max-w-xl mx-auto overflow-hidden ">
+          <div
+            id="carousel-track"
+            class="flex transition-transform duration-300 ease-in-out"
+          >
+            <!-- Clone terakhir (untuk transisi ke belakang) -->
+            <!-- card3 -->
+            <div
+              class="min-w-full p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+            >
+              <img
+                src="./src/assets/review-xpb/desain-image.jpg"
+                alt=""
+                class=""
+              />
+              <h1 class="font-semibold text-[38px] mt-2">Design Graphics</h1>
+              <p
+                class="font-semibold text-[20px] text-gray-600 text-center mt-6"
+              >
+                Learn basics Figma, Blender, Canva, and others.
+              </p>
+            </div>
+
+            <!-- Asli -->
+            <!-- card1 -->
+            <div
+              class="min-w-full p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+            >
+              <img src="./src/assets/review-xpb/dev.png" alt="" class="" />
+              <h1 class="font-semibold text-[38px] mt-2">Development</h1>
+              <p
+                class="font-semibold text-[20px] text-gray-600 text-center mt-6"
+              >
+                Learn basics Frontend, Backend, several frameworks, and others.
+              </p>
+            </div>
+            <!-- card2 -->
+            <div
+              class="min-w-full p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+            >
+              <img
+                src="./src/assets/review-xpb/ilustrasi-bahasa1.jpg"
+                alt=""
+                class="w-full"
+              />
+              <h1 class="font-semibold text-[38px] mt-2">Languages</h1>
+              <p
+                class="font-semibold text-[20px] text-gray-600 text-center mt-6"
+              >
+                Learn basics Indonesian Languange, Japanese Languange, Germany
+                Languange, and others.
+              </p>
+            </div>
+            <!-- card3 -->
+            <div
+              class="min-w-full p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+            >
+              <img
+                src="./src/assets/review-xpb/desain-image.jpg"
+                alt=""
+                class="w-full"
+              />
+              <h1 class="font-semibold text-[38px] mt-2">Design Graphics</h1>
+              <p
+                class="font-semibold text-[20px] text-gray-600 text-center mt-6"
+              >
+                Learn basics Figma, Blender, Canva, and others.
+              </p>
+            </div>
+
+            <!-- Clone pertama (untuk transisi ke depan) -->
+            <!-- card1 -->
+            <div
+              class="min-w-full p-4 flex flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+            >
+              <img src="./src/assets/review-xpb/dev.png" alt="" class="" />
+              <h1 class="font-semibold text-[38px] mt-2">Development</h1>
+              <p
+                class="font-semibold text-[20px] text-gray-600 text-center mt-6"
+              >
+                Learn basics Frontend, Backend, several frameworks, and others.
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <button
+            id="prevBtn"
+            class="absolute md:hidden left-2 top-1/2 -translate-y-1/2 bg-gray-800 opacity-50 hover:opacity-100 transition-opacity duration-300 text-white px-3 py-2 rounded-full w-[40px]"
+          >
+            ‹
+          </button>
+          <button
+            id="nextBtn"
+            class="absolute md:hidden right-2 top-1/2 -translate-y-1/2 bg-gray-800 opacity-50 hover:opacity-100 transition-opacity duration-300 text-white px-3 py-2 rounded-full w-[40px]"
+          >
+            ›
+          </button>
+        </div>
+      </section>
+
+      <!-- roadmaps -->
+<section>
+  <!-- card2 roadmaps -->
+  <div class="relative w-full max-w-6xl mx-auto mt-12">
+  <div id="carousel-track-12" class="flex transition-transform duration-300 ease-in-out">
+    <!-- 12 Cards -->
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 1</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 2</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 3</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 4</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 5</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 6</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 7</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 8</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 9</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 10</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 11</div></div>
+    <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0"><div class="bg-white rounded-lg shadow-md p-6 text-center">Card 12</div></div>
   </div>
-</header>
 
-<main>
+  <!-- Tombol navigasi khusus carousel 12 -->
+  <button id="prevBtn12" class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full md:hidden">‹</button>
+  <button id="nextBtn12" class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full md:hidden">›</button>
+</div>
+</section>
+    </main>
 
-  <section id="hero-section" class="flex flex-col items-center justify-center mt-[70px] text-center">
-    <img src="./src/assets/Frame 90.png" class="w-full shadow-lg lg:hidden" />
-    <img src="" alt="">
-    <div class="absolute lg:flex lg:items-center lg:justify-center lg:flex-col lg:relative">
-      <h1 class="text-[#2A6F97] font-semibold text-4xl mb-3">XPBoost Roadmap</h1>
-      <p class="text-[#50BFEC] font-medium italic text-[17px]">“Your journey to smarter skills starts <br> here”</p>
-    </div>  
-  </section>
-
-
-
-</main>
-
-<!-- JS -->
-<script src="./src/script.js"></script>
-
-<!-- Animasi -->
-<style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .animate-fadeIn {
-    animation: fadeIn 0.3s ease forwards;
-  }
-</style>
-<!-- XPBoost Navbar End -->
-
+    <!-- JS -->
+    <script src="./src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Animasi -->
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.3s ease forwards;
+      }
+    </style>
+    <!-- XPBoost Navbar End -->
   </body>
 </html>
