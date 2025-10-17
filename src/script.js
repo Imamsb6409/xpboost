@@ -113,3 +113,20 @@ function setupCarousel(trackId, prevId, nextId) {
 
 // Inisialisasi carousel 12 card (non-looping)
 setupCarousel('carousel-track-12', 'prevBtn12', 'nextBtn12');
+
+
+// FAQ Accordion
+document.getElementById('question1').addEventListener('click', function() {
+    const answer = document.getElementById('A1');
+    answer.classList.toggle('hidden');
+});
+
+document.getElementById('question2').addEventListener('click', function() {
+    const answer = document.getElementById('A2');
+    answer.classList.toggle('hidden');
+});
+
+document.getElementById('question3').addEventListener('click', function() {
+    const answer = document.getElementById('A3');
+    answer.classList.toggle('hidden');
+});
