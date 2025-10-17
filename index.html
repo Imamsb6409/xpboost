@@ -142,15 +142,15 @@
           <p class="text-center">to make your journey easier</p>
         </div>
         <!-- card review -->
-        <div class="relative w-full max-w-xl mx-auto overflow-hidden">
+        <div class="relative w-full max-w-xl md:max-w-full mx-auto overflow-hidden">
           <div
             id="carousel-track"
-            class="flex transition-transform duration-300 ease-in-out"
+            class="flex transition-transform duration-300 ease-in-out md:flex-nowrap md:gap-5 md:justify-center"
           >
             <!-- Clone terakhir (untuk transisi ke belakang) -->
             <!-- card3 -->
             <div
-              class="min-w-full p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+              class="min-w-full md:hidden p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
             >
               <img
                 src="./src/assets/review-xpb/desain-image.jpg"
@@ -168,9 +168,9 @@
             <!-- Asli -->
             <!-- card1 -->
             <div
-              class="min-w-full p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+              class="min-w-full md:w-3/12 md:min-w-[300px] p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
             >
-              <img src="./src/assets/review-xpb/dev.png" alt="" class="" />
+              <img src="./src/assets/review-xpb/dev.png" alt="" class="md:w-[500px]" />
               <h1 class="font-semibold text-[38px] mt-2">Development</h1>
               <p
                 class="font-semibold text-[20px] text-gray-600 text-center mt-6"
@@ -180,12 +180,12 @@
             </div>
             <!-- card2 -->
             <div
-              class="min-w-full p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+              class="min-w-full md:w-3/12 md:min-w-[300px] p-4 flex min-h-[400px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
             >
               <img
                 src="./src/assets/review-xpb/ilustrasi-bahasa1.jpg"
                 alt=""
-                class="w-full"
+                class="md:w-[500px]"
               />
               <h1 class="font-semibold text-[38px] mt-2">Languages</h1>
               <p
@@ -197,12 +197,12 @@
             </div>
             <!-- card3 -->
             <div
-              class="min-w-full p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+              class="min-w-full md:w-3/12 md:min-w-[300px] p-4 flex min-h-[450px] flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6 "
             >
               <img
                 src="./src/assets/review-xpb/desain-image.jpg"
                 alt=""
-                class="w-full"
+                class="md:w-[500px]"
               />
               <h1 class="font-semibold text-[38px] mt-2">Design Graphics</h1>
               <p
@@ -215,7 +215,7 @@
             <!-- Clone pertama (untuk transisi ke depan) -->
             <!-- card1 -->
             <div
-              class="min-w-full p-4 flex flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
+              class="min-w-full md:hidden p-4 flex flex-col items-center gap-y-2 bg-white border shadow-lg rounded-[30px] pt-5 pb-11 px-6"
             >
               <img src="./src/assets/review-xpb/dev.png" alt="" class="" />
               <h1 class="font-semibold text-[38px] mt-2">Development</h1>
@@ -246,7 +246,12 @@
       <section class="w-full bg-blue-100"></section>
 
       <!-- roadmaps -->
-      <section>
+      <section id="roadmaps" class="min-h-screen">
+        <!-- judul roadmaps -->
+         <div class="text-center">
+          <h1 class="font-bold text-[30px]">Featured Roadmap Paths</h1>
+          <p class="text-gray-500">Learn recommended foundational skills here to gain new abilities and fresh perspectives.</p>
+         </div>
         <!-- card2 roadmaps -->
         <div class="relative w-full max-w-6xl mx-auto mt-12">
           <div
@@ -255,17 +260,17 @@
           >
             <!-- 12 Cards -->
             <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
-              <div class="bg-white rounded-lg shadow-md p-6 text-center">
-                <img src="" alt="">
-                <h2>Learn basic for Frontend <span>Tecnology | WebDev</span></h2>
-                <p>Roadmap the Frontend Structure</p>
-                <button>Start Module</button>
+              <div class="bg-[#f6f6f6] rounded-lg shadow-md p-4  text-left max-w-[90vw] min-h-[370px] md:max-w-[25vw]">
+                <img src="./src/assets/asset-roadmaps/image .png" alt="">
+                <h2 class="flex justify-between mt-3">Learn basic for Frontend <span class="px-3 py-1 rounded-full bg-yellow-400 text-white text-xs font-semibold">Tecnology | WebDev</span></h2>
+                <p class="text-[14px] mt-2">Roadmap the Frontend Structure</p>
+                <button class="mt-5 bg-bgPrimary text-[14px] text-white px-6 py-2 rounded-lg">Start Module</button>
               </div>
             </div>
             <!-- card 2 -->
             <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0 h-40 w-96">
               <div class="bg-[#f6f6f6] rounded-xl shadow-md px-3 pb-10 pt-4 overflow-hidden border border-[#2A6F97]">
-                <img src="./src/assets/image 8.png" alt="" class="w-58 h-48">
+                <img src="./src/assets/asset-roadmaps/image .png" alt="" class="w-58 h-48">
                 <h2 class="flex items-center gap-5 mt-2 text-base  text-black mb-2">Learn basic for Frontend <span class="bg-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Tecnology | WebDev</span></h2>
                 <p class="text-[#656565] text-sm mb-5">Roadmap the Frontend Structure</p>
                 <button class="bg-[#2A6F97] rounded-xl text-white h-9 w-32 text-xs">Start Module</button>
@@ -322,13 +327,13 @@
           <!-- Tombol navigasi khusus carousel 12 -->
           <button
             id="prevBtn12"
-            class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full md:hidden"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-800 opacity-50 hover:opacity-100 transition-opacity duration-300 text-white px-3 py-2 rounded-full w-[40px] md:hidden"
           >
             ‹
           </button>
           <button
             id="nextBtn12"
-            class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 text-white px-3 py-2 rounded-full md:hidden"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-800 opacity-50 hover:opacity-100 transition-opacity duration-300 text-white px-3 py-2 rounded-full w-[40px] md:hidden"
           >
             ›
           </button>
@@ -338,10 +343,11 @@
       <!-- Q&A  -->
       <section
         id="QNA"
-        class="flex flex-col gap-8 items-center justify-center my-10 px-2 bg-primary pt-[30px] pb-[20px]"
+        class="flex mx-4 rounded-2xl flex-col gap-8 gap-y-9 items-center justify-center my-10 px-2 bg-primary pt-[30px] pb-[30px]"
       >
-        <h1 class="font-bold text-[30px] text-center">ANY QUESTIONS?</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h1 class="font-bold text-[30px] text-center text-white">ANY QUESTIONS?</h1>
+        <!--List QNA -->
+        <div class="grid grid-cols-1 gap-4">
           <!-- Q1 -->
           <div id="question1" class="flex flex-col items-center  justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer">
           <div class="flex justify-between items-center gap-x-8">
@@ -456,28 +462,19 @@
           </div>
           </div>
         </div>
+
+        <!-- button feedback -->
+         <h1 class="text-white text-[20px] text-center">If you have any other questions and feedback, please ask to us.</h1>
+         <button class="text-primary text-[24px] bg-white font-bold px-8 py-3 rounded-xl"><a href="">feedback</a></button>
       </section>
     </main>
+    <footer>
+
+    </footer>
 
     <!-- JS -->
     <script src="./src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-    <!-- Animasi -->
-    <style>
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      .animate-fadeIn {
-        animation: fadeIn 0.3s ease forwards;
-      }
-    </style>
     <!-- XPBoost Navbar End -->
   </body>
 </html>
