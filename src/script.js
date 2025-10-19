@@ -11,6 +11,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+
+
+
 const menuBtn = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
   menuBtn.addEventListener('click', () => {
@@ -127,14 +130,20 @@ const answer3 = document.getElementById('A3');
 
 question1.addEventListener('click', () => {
   answer1.classList.toggle('hidden');
+  answer2.classList.add('hidden');
+  answer3.classList.add('hidden');
 });
 
 question2.addEventListener('click', () => {
   answer2.classList.toggle('hidden');
+  answer1.classList.add('hidden');
+  answer3.classList.add('hidden');
 });
 
 question3.addEventListener('click', () => {
   answer3.classList.toggle('hidden');
+  answer1.classList.add('hidden');
+  answer2.classList.add('hidden');
 });
 
 // change navbar on scroll
