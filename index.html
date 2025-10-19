@@ -19,7 +19,8 @@
     <!-- XPBoost Navbar Start -->
 
     <header
-      class="fixed top-0 left-0 w-full z-50 bg-bgPrimary backdrop-blur-md shadow-sm transition-all duration-300"
+    id="header"
+      class="fixed top-0 left-0 w-full z-50 bg-bgPrimary  backdrop-blur-sm shadow-sm transition-all duration-300"
     >
       <nav
         class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
@@ -36,15 +37,15 @@
         <!-- Menu -->
         <ul class="hidden md:flex space-x-8 font-medium text-white">
           <li>
-            <a href="#home" class="hover:text-blue-600 transition">Home</a>
+            <a href="#home" class="hover:text-white/80 transition">Home</a>
           </li>
           <li>
-            <a href="#roadmaps" class="hover:text-blue-600 transition"
+            <a href="#roadmaps" class="hover:text-white/80 transition"
               >Roadmaps</a
             >
           </li>
           <li>
-            <a href="#contact" class="hover:text-blue-600 transition"
+            <a href="#contact" class="hover:text-white/80 transition"
               >Contact</a
             >
           </li>
@@ -253,30 +254,40 @@
           <p class="text-gray-500">Learn recommended foundational skills here to gain new abilities and fresh perspectives.</p>
          </div>
         <!-- card2 roadmaps -->
-        <div class="relative w-full max-w-6xl mx-auto mt-12">
+        <div class="relative w-full max-w-6xl mx-auto mt-12  ">
           <div
             id="carousel-track-12"
-            class="flex transition-transform duration-300 ease-in-out"
+            class="flex transition-transform duration-300 ease-in-out md:grid md:grid-cols-3 md:gap-6"
           >
             <!-- 12 Cards -->
-            <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
-              <div class="bg-[#f6f6f6] rounded-lg shadow-md p-4  text-left max-w-[90vw] min-h-[370px] md:max-w-[25vw]">
+             <!-- card 1 -->
+              <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
+              <div class="bg-[#f6f6f6] rounded-lg shadow-md p-4  text-left max-w-[90vw] min-h-[370px] md:max-w-[25vw]  border-[#2A6F97]/30 border">
                 <img src="./src/assets/asset-roadmaps/image .png" alt="">
                 <h2 class="flex justify-between mt-3">Learn basic for Frontend <span class="px-3 py-1 rounded-full bg-yellow-400 text-white text-xs font-semibold">Tecnology | WebDev</span></h2>
-                <p class="text-[14px] mt-2">Roadmap the Frontend Structure</p>
+                <p class="text-[14px] text-black/60 mt-2">Roadmap the Frontend Structure</p>
                 <button class="mt-5 bg-bgPrimary text-[14px] text-white px-6 py-2 rounded-lg">Start Module</button>
               </div>
             </div>
-            <!-- card 2 -->
-            <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0 h-40 w-96">
-              <div class="bg-[#f6f6f6] rounded-xl shadow-md px-3 pb-10 pt-4 overflow-hidden border border-[#2A6F97]">
-                <img src="./src/assets/asset-roadmaps/image .png" alt="" class="w-58 h-48">
-                <h2 class="flex items-center gap-5 mt-2 text-base  text-black mb-2">Learn basic for Frontend <span class="bg-yellow-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Tecnology | WebDev</span></h2>
-                <p class="text-[#656565] text-sm mb-5">Roadmap the Frontend Structure</p>
-                <button class="bg-[#2A6F97] rounded-xl text-white h-9 w-32 text-xs">Start Module</button>
+             <!-- card 2 -->
+            <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
+              <div class="bg-[#f6f6f6] rounded-lg shadow-md p-4  text-left max-w-[90vw] min-h-[370px] md:max-w-[25vw]  border-[#2A6F97]/30 border">
+                <img src="./src/assets/asset-roadmaps/image .png" alt="">
+                <h2 class="flex justify-between mt-3">Learn basic for Frontend <span class="px-3 py-1 rounded-full bg-yellow-400 text-white text-xs font-semibold">Tecnology | WebDev</span></h2>
+                <p class="text-[14px] text-black/60 mt-2">Roadmap the Frontend Structure</p>
+                <button class="mt-5 bg-bgPrimary text-[14px] text-white px-6 py-2 rounded-lg">Start Module</button>
               </div>
             </div>
             <!-- card 3 -->
+            <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
+              <div class="bg-[#f6f6f6] rounded-lg shadow-md p-4  text-left max-w-[90vw] min-h-[370px] md:max-w-[25vw]  border-[#2A6F97]/30 border">
+                <img src="./src/assets/asset-roadmaps/image .png" alt="">
+                <h2 class="flex justify-between mt-3">Learn basic for Frontend <span class="px-3 py-1 rounded-full bg-yellow-400 text-white text-xs font-semibold">Tecnology | WebDev</span></h2>
+                <p class="text-[14px] text-black/60 mt-2">Roadmap the Frontend Structure</p>
+                <button class="mt-5 bg-bgPrimary text-[14px] text-white px-6 py-2 rounded-lg">Start Module</button>
+              </div>
+            </div>
+            <!-- card 4 -->
             <div class="min-w-full md:min-w-[300px] p-4 flex-shrink-0">
               <div class="bg-white rounded-lg shadow-md p-6 text-center">
                 Card 4
@@ -341,15 +352,15 @@
       </section>
 
       <!-- Q&A  -->
-      <section
+      <section  
         id="QNA"
-        class="flex mx-4 rounded-2xl flex-col gap-8 gap-y-9 items-center justify-center my-10 px-2 bg-primary pt-[30px] pb-[30px]"
+        class="flex mx-4 rounded-2xl flex-col gap-8 gap-y-9 items-center justify-center my-10 px-2 bg-primary pt-[30px] pb-[30px] md:min-h-[700px]"
       >
         <h1 class="font-bold text-[30px] text-center text-white">ANY QUESTIONS?</h1>
         <!--List QNA -->
-        <div class="grid grid-cols-1 gap-4">
+        <div class="grid grid-cols-1 gap-4 md:gap-y-10">
           <!-- Q1 -->
-          <div id="question1" class="flex flex-col items-center  justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer">
+          <div id="question1" class="flex flex-col items-center  justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer md:scale-150">
           <div class="flex justify-between items-center gap-x-8">
               <div class="q1-kanan text-primary">
               <p class="text-[10px]">1st Question</p>
@@ -388,7 +399,7 @@
           </div>
          
           <!-- Q2 -->
-          <div id="question2" class="flex flex-col  text-left justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer">
+          <div id="question2" class="flex flex-col  text-left justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer md:scale-150">
           <div class="flex justify-between items-center gap-x-8 ">
               <div class="q1-kanan text-primary">
               <p class="text-[10px]">2nd Question</p>
@@ -425,7 +436,7 @@
           </div>
           </div>
           <!-- Q3 -->
-           <div id="question3" class="flex flex-col   justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer">
+           <div id="question3" class="flex flex-col   justify-between bg-white px-[20px] py-[10px] rounded-xl cursor-pointer md:scale-150">
           <div class="flex justify-between items-center gap-x-8">
               <div class="q1-kanan text-primary">
               <p class="text-[10px]">3rd Question</p>

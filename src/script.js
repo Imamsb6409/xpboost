@@ -136,3 +136,9 @@ question2.addEventListener('click', () => {
 question3.addEventListener('click', () => {
   answer3.classList.toggle('hidden');
 });
+
+// change navbar on scroll
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  header.classList.toggle('bg-opacity-50', window.scrollY > 0);
+});
