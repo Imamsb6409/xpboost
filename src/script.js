@@ -1,3 +1,4 @@
+
 // smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -8,6 +9,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+
 
 
 const menuBtn = document.getElementById('menu-toggle');
@@ -113,3 +117,37 @@ function setupCarousel(trackId, prevId, nextId) {
 
 // Inisialisasi carousel 12 card (non-looping)
 setupCarousel('carousel-track-12', 'prevBtn12', 'nextBtn12');
+
+//  QNA
+
+const question1 = document.getElementById('question1');
+const question2 = document.getElementById('question2');
+const question3 = document.getElementById('question3');
+
+const answer1 = document.getElementById('A1');
+const answer2 = document.getElementById('A2');
+const answer3 = document.getElementById('A3');
+
+question1.addEventListener('click', () => {
+  answer1.classList.toggle('hidden');
+  answer2.classList.add('hidden');
+  answer3.classList.add('hidden');
+});
+
+question2.addEventListener('click', () => {
+  answer2.classList.toggle('hidden');
+  answer1.classList.add('hidden');
+  answer3.classList.add('hidden');
+});
+
+question3.addEventListener('click', () => {
+  answer3.classList.toggle('hidden');
+  answer1.classList.add('hidden');
+  answer2.classList.add('hidden');
+});
+
+// change navbar on scroll
+window.addEventListener('scroll', function() {
+  const header = document.getElementById('header');
+  header.classList.toggle('bg-opacity-50', window.scrollY > 0);
+});
