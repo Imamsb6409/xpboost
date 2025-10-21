@@ -646,6 +646,10 @@ video {
   margin-top: 2.25rem;
 }
 
+.mb-96 {
+  margin-bottom: 24rem;
+}
+
 .flex {
   display: flex;
 }
@@ -688,6 +692,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[140px\] {
+  width: 140px;
 }
 
 .min-w-full {
@@ -751,6 +759,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -761,6 +773,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-4 {
@@ -805,6 +821,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .justify-self-start {
   justify-self: start;
 }
@@ -841,12 +863,39 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-t-xl {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-b-8 {
+  border-bottom-width: 8px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-\[\#2A6F97\]\/30 {
   border-color: rgb(42 111 151 / 0.3);
+}
+
+.border-\[\#2A6F97\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(42 111 151 / var(--tw-border-opacity, 1));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#f6f6f6\] {
@@ -887,6 +936,11 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#59AC77\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(89 172 119 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-50 {
@@ -986,12 +1040,28 @@ video {
   padding-top: 30px;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.font-urbanist {
+  font-family: @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');;
 }
 
 .text-4xl {
@@ -1050,6 +1120,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1060,6 +1138,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .italic {
