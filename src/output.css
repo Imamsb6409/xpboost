@@ -682,6 +682,14 @@ video {
   margin-top: 200px;
 }
 
+.-mb-1 {
+  margin-bottom: -0.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -692,6 +700,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-\[140px\] {
+  height: 140px;
 }
 
 .max-h-screen {
@@ -825,6 +837,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-x-3 {
