@@ -1094,6 +1094,11 @@ video {
   padding-bottom: 10px;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -1473,6 +1478,10 @@ body {
     width: 90%;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:min-w-\[300px\] {
     min-width: 300px;
   }
@@ -1569,6 +1578,16 @@ body {
     padding-bottom: 1.75rem;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1602,6 +1621,16 @@ body {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:shadow-lg {
